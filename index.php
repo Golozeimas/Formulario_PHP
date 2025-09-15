@@ -21,6 +21,15 @@
                                         <button id="enviado" type="submit">Enviar</button>
     </form>
 
-    
+    <h1> Dados enviados: </h1>
+    <?php
+    if(isset($_POST['enviado'])){
+        echo "<p><b>Nome: </b>". $_POST['nome'] . "</p>";
+        echo "<p><b>E-mail: </b>". $_POST['email'] . "</p>";
+        echo "<p><b>Website: </b>". $_POST['website'] . "</p>";
+        echo "<p><b>Comentario: </b>". $_POST['comentario'] . "</p>";
+        echo "<p><b>Gênero: </b>". $_POST['genero'] . "</p>";
+    }
+    ?>
 </body>
 </html>
